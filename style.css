@@ -561,6 +561,15 @@ footer .follow{
         padding-bottom: 0;
     }
 
+    .main-article{
+        flex: none;
+        text-align: center;
+    }
+
+    .main-article img{
+        margin: 0 auto;
+    }
+
     .related-articles{
         flex-direction: column;
         border-bottom: 1px solid black;
