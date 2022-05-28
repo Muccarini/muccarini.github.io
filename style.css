@@ -47,6 +47,7 @@ a{
     display: flex;
     padding-bottom: 24px;
     background-color: white;
+    overflow: hidden;
 }
 
 .wrapper-header a{
@@ -116,15 +117,13 @@ a{
 
 .wrapper-navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: stretch;
     align-items: center;
     height: 55px;
     border-top: 5px solid rgb(113, 113, 223);
     background-color: white;
     font-weight: 600;
-    letter-spacing: -1px;
-    /* position: sticky; */
 }
 
 .wrapper-navbar a{
@@ -495,6 +494,7 @@ footer .follow{
     gap: 1rem;
     padding: 2rem;
     border-bottom: 1px solid white;
+    overflow: hidden;
 }
 /* END FOOTER */
 
@@ -534,18 +534,23 @@ footer .follow{
     }
 
     .logo img{
-        width: 100%;
+        width: 80%;
         height: 100%;
+        object-fit: contain;
     }
 
     .wrapper-header{
+        justify-content: flex-start;
         height: 60px;
         padding-bottom: 0;
     }
 
     .wrapper-navbar{
+        display: flex;
+        width: 100%;
         justify-content: flex-start;
         gap: 1rem;
+        overflow: hidden;
     }
 
     /* END HEADER
@@ -600,7 +605,6 @@ footer .follow{
         flex-direction: row-reverse;
     }
 
-    /* tofix */
     .main-bottom-img{
         flex-basis: 150px;
     }
@@ -719,6 +723,10 @@ footer .follow{
 
 @media  screen and (max-width:768px) {
 
+    .logo img{
+        width: 60%;
+    }
+
         /* START EDITOR'S PICK */
 
         .preview{
@@ -740,11 +748,16 @@ footer .follow{
         }
 
         /* END MOST READ */
+
     }
 
 /* < 576px */
 
 @media  screen and (max-width:576px) {
+
+    .opinion-title{
+        width: 100%;
+    }
 
     }
     
